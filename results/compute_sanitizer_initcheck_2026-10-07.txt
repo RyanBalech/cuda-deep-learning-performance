@@ -1,0 +1,3 @@
+========= COMPUTE-SANITIZER
+GEMM correctness passed: 30 deterministic shapes x 4 implementations
+========= ERROR SUMMARY: 0 errors

@@ -1,0 +1,21 @@
+UpdateCTestConfiguration  from :C:/Users/ryanb/cuda-deep-learning-performance/build-vs/DartConfiguration.tcl
+Parse Config file:C:/Users/ryanb/cuda-deep-learning-performance/build-vs/DartConfiguration.tcl
+Test project C:/Users/ryanb/cuda-deep-learning-performance/build-vs
+Constructing a list of tests
+Done constructing a list of tests
+Updating test list for fixtures
+Added 0 tests to meet fixture requirements
+Checking test dependency graph...
+Checking test dependency graph end
+test 1
+    Start 1: gemm_correctness
+
+1: Test command: C:\Users\ryanb\cuda-deep-learning-performance\build-vs\Release\gemm_correctness.exe
+1: Working Directory: C:/Users/ryanb/cuda-deep-learning-performance/build-vs
+1: Test timeout computed to be: 1500
+1: GEMM correctness passed: 30 deterministic shapes x 4 implementations
+1/1 Test #1: gemm_correctness .................   Passed    2.12 sec
+
+100% tests passed out of 1
+
+Total Test time (real) =   2.13 sec

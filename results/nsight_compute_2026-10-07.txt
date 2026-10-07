@@ -1,0 +1,4 @@
+==PROF== Connected to process 14240 (C:\Users\ryanb\cuda-deep-learning-performance\build-vs\Release\gemm_benchmark.exe)
+==PROF== Profiling "tiled": 0%....50%....100% - 8 passes
+==PROF== Trying to shutdown target application
+==PROF== Report: C:\Users\ryanb\cuda-deep-learning-performance\results\profile_tiled_512_2026-10-07.ncu-rep
