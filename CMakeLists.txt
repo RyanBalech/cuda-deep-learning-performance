@@ -10,7 +10,8 @@ add_library(cuda_kernels
   cuda/matmul.cu
   cuda/reduction.cu
   cuda/softmax.cu
-  cuda/fused_ops.cu)
+  cuda/fused_ops.cu
+  cuda/attention.cu)
 target_include_directories(cuda_kernels PUBLIC include)
 set_target_properties(cuda_kernels PROPERTIES CUDA_SEPARABLE_COMPILATION ON)
 
