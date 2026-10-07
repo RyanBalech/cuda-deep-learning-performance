@@ -1,0 +1,10 @@
+build/
+*.o
+*.so
+*.a
+.venv/
+__pycache__/
+results/*.csv
+results/*.json
+profiling/*.ncu-rep
+profiling/*.nsys-rep
