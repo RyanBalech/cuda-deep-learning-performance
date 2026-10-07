@@ -1,0 +1,24 @@
+name: static-checks
+on:
+  push:
+  pull_request:
+jobs:
+  source-checks:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Verify expected project files
+        run: |
+          test -f cuda/matmul.cu
+          test -f cuda/reduction.cu
+          test -f cuda/softmax.cu
+          test -f cuda/fused_ops.cu
+          test -f cuda/attention.cu
+          test -f pytorch_extension/extension.cu
+          test -f docs/PERFORMANCE_STUDY.md
+      - name: Prevent fabricated benchmark claims
+        run: |
+          if grep -RIE '[0-9]+(\.[0-9]+)?x speedup|[0-9]+% faster' README.md docs --exclude=ROADMAP.md; then
+            echo "Performance claims require reviewed measured results."
+            exit 1
+          fi
